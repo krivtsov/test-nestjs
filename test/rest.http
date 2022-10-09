@@ -1,0 +1,20 @@
+# Auth
+## signup - create
+###
+POST http://localhost:3000/signup
+content-type: application/json
+
+{
+    "user_id": "a12@email.com",
+    "password": "123"
+}
+
+## signin
+###
+POST http://localhost:3000/signin
+content-type: application/json
+
+{
+    "user_id": "a12@email.com",
+    "password": "123"
+}
