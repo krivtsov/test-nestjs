@@ -12,8 +12,9 @@ export const getPgConfig = async (
     password: configService.get('TYPEORM_PASSWORD'),
     database: configService.get('TYPEORM_DATABASE'),
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
+    // migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
     synchronize: true,
     autoLoadEntities: true,
-    logging: true,
+    logging: false,
   };
 };
