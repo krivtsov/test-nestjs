@@ -1,9 +1,14 @@
-// import { IsString } from 'class-validator';
+import { IsNotEmpty, IsString, Validate } from 'class-validator';
+import { CustomValidId } from './customValidId';
 
 export class AuthDto {
-  //   @IsString()
+  @IsNotEmpty()
+  @Validate(CustomValidId, {
+    message: 'Not Valid Id',
+  })
   id: string;
 
-  //   @IsString()
+  @IsNotEmpty()
+  @IsString()
   password: string;
 }
