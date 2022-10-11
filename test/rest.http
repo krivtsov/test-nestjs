@@ -5,8 +5,17 @@ POST http://localhost:3000/signup
 content-type: application/json
 
 {
-    "user_id": "a12@email.com",
-    "password": "123"
+    "id": "+799923423494",
+    "password": "1213"
+}
+
+###
+POST http://localhost:3000/signup
+content-type: application/json
+
+{
+    "id": "dfgd1f@dfd.rt",
+    "password": "1213"
 }
 
 ## signin
@@ -15,6 +24,6 @@ POST http://localhost:3000/signin
 content-type: application/json
 
 {
-    "user_id": "a12@email.com",
-    "password": "123"
+    "id": "+79992342343",
+    "password": "1213"
 }
