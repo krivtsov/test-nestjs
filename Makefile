@@ -41,4 +41,4 @@ test_e2e:
 	npm run test:e2e
 
 docker-compose:
-	docker-compose up -d
+	docker compose up -d
